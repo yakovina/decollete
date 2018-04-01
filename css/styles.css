@@ -20,6 +20,7 @@
 html{
 	font-family: GothamPro;
 	font-size: 12px;
+	color: #3f4147;
 
 }
 
@@ -28,11 +29,16 @@ ul,li,a, select{
 	padding: 0;
 }
 
-
+.first-screen{
+	height: 100vh;
+	background: url(../images/man.png) #eef1f2 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+}
 /*header*/
 .header{
-	background-color: #eef1f2;
-	padding: 45px 0 35px;
+	padding: 45px 0 60px;
 	font-size: 1.2rem;
 
 }
@@ -64,6 +70,59 @@ ul,li,a, select{
 	border: 2px solid #dbdee2;
 	border-radius: 50px;
 	font-weight: 700;
-	font-size: 12px;
+	font-size: 1.2rem;
 	text-align: center;
+	padding-right: 20px;
+}
+
+/*mainscreen*/
+.slogan{
+	margin-right: 30px;
+}
+
+.slogan__header{
+	font-size: 3rem;
+	font-weight: 700;
+	color: #3f4147;
+}
+
+.slogan__header:after{
+	display: block;
+	content:"";
+	width: 2em;
+	border-bottom: 2px solid #ab2970;
+	margin: 3rem 0;
+	}
+
+.slogan__text{
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.5em;
+	color: #3f4147;
+	margin-bottom: 65px;
+}
+
+.slogan__text strong{
+	font-weight: 700;
+	color: #3f4147;
+
+}
+
+.slogan__button{
+	font-family: GothamPro;
+	font-weight: 700;
+	background-color: #ab2970;
+	color: #fff;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding: 18px;
+	border-radius: 50px;
+	transition: 0.3s ease;
+	text-decoration: none;
+}
+
+.slogan__button:hover{
+	background-color: grey;
+	color: #fff;
+	text-decoration: none;
 }
