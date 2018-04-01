@@ -1,0 +1,85 @@
+/* Default custom select styles */
+div.cs-select {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: center;
+	background: #fff;
+	z-index: 100;
+	width: 1008px;
+	max-width: 68px;
+	padding: 5px 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.cs-select:focus {
+	outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+.cs-select select {
+	display: none;
+}
+
+.cs-select span {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Placeholder and selected option */
+
+
+
+
+.cs-select.cs-active > span::after {
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(180deg);
+}
+
+div.cs-active {
+	z-index: 200;
+}
+
+/* Options */
+.cs-select .cs-options {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	background: #fff;
+	visibility: hidden;
+}
+
+.cs-select.cs-active .cs-options {
+	visibility: visible;
+}
+
+.cs-select ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.cs-select ul span {
+
+}
+
+.cs-select ul li.cs-focus span {
+	background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+}
+
+.cs-select li.cs-optgroup > span {
+	cursor: default;
+}

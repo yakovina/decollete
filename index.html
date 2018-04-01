@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>decolette</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+	<link rel="stylesheet" type="text/css" href="css/cs-skin-rotate.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row  d-flex align-items-center">
+                <div class="col-lg-3">
+                    <img src="images/logo.svg" alt="logo" class="logo">
+                </div>
+                <div class="col-lg-5 ml-auto">
+                	<nav>
+                    <ul class="menu d-flex justify-content-center">
+                    	<li class="menu__item"><a href="#">Услуги и цены </a>               		
+                    	</li>
+                    	<li class="menu__item"><a href="#">Отзывы</a> </li>
+                     	<li class="menu__item"><a href="#">Контакты</a>  
+                    	</li>                                    	
+                    </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-1">
+                	<select name="" id="" class="language cs-select cs-skin-rotate">
+                		<option class="option">uk</option>
+                		<option class="option" selected>eng</option>
+                		<option class="option">ru</option>
+                		<option class="option">pol</option>
+                	</select>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="mainscreen">
+    </section>
+    <section class="services">
+    </section>
+    <section class="reviews">
+    </section>
+    <section class="query">
+    </section>
+    <footer class="footer">
+    </footer>
+    <script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+	<script>
+			(function() {
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx(el);
+				} );
+			})();
+		</script>
+	</body>
+</body>
+
+</html>
